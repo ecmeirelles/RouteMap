@@ -1,0 +1,59 @@
+body {
+	font-family: "Courier New", Courier, monospace;
+}
+
+#mapCanvas {
+	background-image: url("cit-map-med.jpg");
+	background-repeat: no-repeat;
+	display: block;
+	border: 1px solid black;
+}
+
+#popUpArea {
+	display: none;
+	position: absolute;
+	background: rgba(0,0,0,0.7);
+	width: 600px;
+	height: 479px;
+}
+
+#popUpLabel {
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+		
+	-webkit-transform: translate(-50% ,-50%);
+	-moz-transform: translate(-50% ,-50%);
+	transform: translate(-50% ,-50%);
+	
+	text-align: center;
+	background: rgba(192,192,192,1);
+	border-radius: 10px;
+	padding: 30px;
+}
+
+button {
+	margin: 1em;
+	padding: 0.5em;
+	border-radius: 1em;
+	font-family: "Courier New", Courier, monospace;
+	display: inline-block;
+}
+
+table {
+	margin-top: 20px;
+	width: 650px;
+}
+
+table, th, td {
+    border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+	background-color: rgba(192,192,192, 1);
+}

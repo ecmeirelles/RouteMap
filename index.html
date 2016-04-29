@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+	<head>
+		<title>Map Tool</title>
+		
+		<meta charset="utf-8">
+		<meta name="author" content="Elaine C M Peronico">
+		
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	
+	<body>
+		<h1 id="heading">Annotated Map Tool</h1>
+		<canvas id="mapCanvas" width="600" height="479">Your browser does not support the HTML5 canvas tag.</canvas>
+		
+		<div id="popUpArea">
+			<div id="popUpLabel">
+				<form method="get" onsubmit="return false">
+					<input id="textField" type="text" name="label" onkeypress="handleKeyBoard();">
+					<button id="submitButton" type="submit" onclick="saveAndHideForm();">Save Caption</button>
+				</form>
+			</div>
+		</div>
+		
+		<button id="startButton" onclick="startRecording();">Start Recording</button>
+		<button id="playButton" onclick="playMap();">Play</button>
+		
+		<table id="marksTable">
+			<tr>
+				<th>Move</th>
+				<th>Name / Coordinates</th>		
+				<th>Delete</th>
+			</tr>
+		</table>
+	</body>
+	
+	<script type="text/javascript" src="get_coordinates.js"></script>
+	<script type="text/javascript" src="record.js"></script>
+	<script type="text/javascript" src="play.js"></script>
+	<script type="text/javascript" src="submit_data.js"></script>
+	<script type="text/javascript" src="table.js"></script>
+</html>
